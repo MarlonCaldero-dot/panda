@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda</title>
+    <!-- Incluir Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            /* Animación para el cambio de tema */
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        /* Estilos para el modo oscuro */
+        body.dark-mode {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Estilo para el botón y el icono */
+        #toggle-theme {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        #toggle-theme i {
+            margin-right: 8px;
+        }
+
+        #info {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #info.show {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>PANDA</h1>
+        <!-- Botón con icono para cambiar el tema -->
+        <button id="toggle-theme">
+            <i class="fas fa-moon"></i> Cambiar tema
+        </button>
+    </header>
+
+    <section>
+        <h2>Descripción General</h2>
+        <p>El panda gigante es un mamífero originario de China, conocido por su distintivo pelaje blanco y negro. Es un
+            símbolo de conservación debido a su estatus en peligro de extinción.</p>
+    </section>
+
+    <section>
+        <h2>Características Físicas</h2>
+        <p>Los pandas tienen un pelaje blanco con manchas negras alrededor de los ojos, las orejas, las patas y los
+            hombros. Su cuerpo es robusto, y poseen una gran fuerza, aunque su alimentación es principalmente herbívora.
+        </p>
+    </section>
+
+    <section>
+        <h2>Alimentación</h2>
+        <p>La dieta de un panda se compone principalmente de bambú, aunque también pueden comer otros tipos de
+            vegetación, frutas y, ocasionalmente, pequeños mamíferos o aves.</p>
+    </section>
+
+    <section>
+        <h2>Hábitat</h2>
+        <p>El panda gigante vive en las montañas de China, en bosques de bambú donde pueden encontrar su principal
+            fuente de alimento. Prefieren lugares fríos y húmedos, alejados de áreas de alta actividad humana.</p>
+    </section>
+
+    <!-- Botón para mostrar más información -->
+    <button id="show-info">Mostrar más información</button>
+    <div id="info">
+        <p>Su hábitat forestal, en las regiones montañosas del sudoeste de China, ha sido fragmentado, forzando así el
+            aislamiento y la reducción de las poblaciones de osos panda. Los principales factores que alteran el hábitat
+            de los pandas son la conversión de los bosques en áreas agrícolas, la recolección de hierbas medicinales,
+            las talas, la cosecha del bambú y las actividades como el desarrollo de la energía hidráulica, la minería y
+            la construcción de carreteras.</p>
+    </div>
+
+
+    <!-- Enlazamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
